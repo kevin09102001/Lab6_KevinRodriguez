@@ -78,10 +78,6 @@ public class listaclau {
 
     @Override
     public String toString() {
-        return "nombreclase=" + nombreclase + ", nombre=" + nombre + ", puntuacion=" + puntuacion + ", a\u00f1o_Lanzamiento=" + año_Lanzamiento + ", Tipo=" + Tipo + ", Genero=" + Genero ;
+        return "nombreclase=" + nombreclase + ", nombre=" + nombre + ", puntuacion=" + puntuacion + "año de Lanzamiento=" + año_Lanzamiento + ", Tipo=" + Tipo + ", Genero=" + Genero ;
     }
-
-    
-
-   
 }

@@ -49,8 +49,6 @@ public class lista2 {
     public String toString() {
         return "lista2" + "a=" + listaa + ", archivo=" + archivo + '}';
     }
-       
-
     //metodos de administracion
     public void escribirArchivo() throws IOException {
         FileWriter fw = null;
@@ -59,12 +57,12 @@ public class lista2 {
             fw = new FileWriter(archivo, false);
             bw = new BufferedWriter(fw);
             for (listaclau t : listaa) {
-                bw.write(t.getNombreclase() + ";");
-                bw.write(t.getNombre() + ";");
-                bw.write(t.getPuntuacion() + ";");
-                bw.write(t.getAño_Lanzamiento() + ";");
-                bw.write(t.getTipo() + ";");
-                bw.write(t.getGenero()+ ";");
+                bw.write(t.getNombreclase() + "; ");
+                bw.write(t.getNombre() + "; ");
+                bw.write(t.getPuntuacion() + "; ");
+                bw.write(t.getAño_Lanzamiento() + "; ");
+                bw.write(t.getTipo() + "; ");
+                bw.write(t.getGenero()+ "\n");
             }
             bw.flush();
         } catch (Exception ex) {
