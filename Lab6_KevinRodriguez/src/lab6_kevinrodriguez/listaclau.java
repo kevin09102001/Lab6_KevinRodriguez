@@ -10,18 +10,30 @@ package lab6_kevinrodriguez;
  * @author Kevin
  */
 public class listaclau {
+    public String nombreclase;
     public String nombre;
     public String puntuacion;
     public String año_Lanzamiento;
     public String Tipo;
     public String Genero;
 
-    public listaclau(String nombre, String puntuacion, String año_Lanzamiento, String Tipo, String Genero) {
+    public listaclau(String nombreclase, String nombre, String puntuacion, String año_Lanzamiento, String Tipo, String Genero) {
+        this.nombreclase = nombreclase;
         this.nombre = nombre;
         this.puntuacion = puntuacion;
         this.año_Lanzamiento = año_Lanzamiento;
         this.Tipo = Tipo;
         this.Genero = Genero;
+    }
+
+    
+
+    public String getNombreclase() {
+        return nombreclase;
+    }
+
+    public void setNombreclase(String nombreclase) {
+        this.nombreclase = nombreclase;
     }
 
     public String getNombre() {
@@ -63,5 +75,13 @@ public class listaclau {
     public void setGenero(String Genero) {
         this.Genero = Genero;
     }
+
+    @Override
+    public String toString() {
+        return "nombreclase=" + nombreclase + ", nombre=" + nombre + ", puntuacion=" + puntuacion + ", a\u00f1o_Lanzamiento=" + año_Lanzamiento + ", Tipo=" + Tipo + ", Genero=" + Genero ;
+    }
+
     
+
+   
 }
