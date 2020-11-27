@@ -26,8 +26,6 @@ public class listaclau {
         this.Genero = Genero;
     }
 
-    
-
     public String getNombreclase() {
         return nombreclase;
     }

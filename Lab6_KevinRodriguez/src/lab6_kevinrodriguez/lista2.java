@@ -50,7 +50,7 @@ public class lista2 {
         return "lista2" + "a=" + listaa + ", archivo=" + archivo + '}';
     }
     //metodos de administracion
-    public void escribirArchivo() throws IOException {
+    public void escribirArchivo() {
         FileWriter fw = null;
         BufferedWriter bw = null;
         try {
@@ -67,8 +67,7 @@ public class lista2 {
             bw.flush();
         } catch (Exception ex) {
         }
-        bw.close();
-        fw.close();
+        
     }
 
     public void cargarArchivo() {
